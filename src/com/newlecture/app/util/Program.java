@@ -3,7 +3,7 @@ package com.newlecture.app.util;
 public class Program {
 
 	public static void main(String[] args) {
-		IntList list = new IntList();
+		ObjectList list = new ObjectList();
 		
 		list.add(3);
 		list.add(5);
@@ -15,7 +15,7 @@ public class Program {
 		System.out.printf("size: %d\n", size);
 		
 		list.add(7);		
-		int num = list.get(0);
+		int num = ( Integer)list.get(0); // Object -> Integer
 		System.out.printf("num: %d\n", num);
 
 	}
